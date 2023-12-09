@@ -5,8 +5,11 @@ export const div = style({
   maxWidth: "328px",
   display: "flex",
   flexDirection: "column",
+
+  marginTop: "auto",
+  paddingBottom: "20dvh",
 });
 
 export const input = style({
-  marginBottom: '12px'
+  marginBottom: "12px",
 });
