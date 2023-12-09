@@ -10,6 +10,13 @@ export const div = style({
   paddingBottom: "20dvh",
 });
 
+export const label = style({
+  fontSize: "20px",
+  marginBottom: "8px",
+});
+
 export const input = style({
+  fontSize: "20px",
   marginBottom: "12px",
+  width: "100%",
 });

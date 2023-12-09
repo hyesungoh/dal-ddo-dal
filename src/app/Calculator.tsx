@@ -30,7 +30,9 @@ export default function Calculator() {
 
   return (
     <div className={s.div}>
-      <label htmlFor={paceId}>페이스</label>
+      <label htmlFor={paceId} className={s.label}>
+        페이스
+      </label>
       <input
         ref={paceInputRef}
         className={s.input}
@@ -40,7 +42,9 @@ export default function Calculator() {
         type="tel"
       />
 
-      <label htmlFor={kmPerHourId}>시속</label>
+      <label htmlFor={kmPerHourId} className={s.label}>
+        시속
+      </label>
       <input
         ref={kmPerHourInputRef}
         className={s.input}

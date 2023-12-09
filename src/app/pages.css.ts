@@ -1,4 +1,5 @@
 import { style } from "@vanilla-extract/css";
+import { mediaScreen } from "~/style/mediaScreen";
 
 export const main = style({
   width: "100%",
@@ -6,6 +7,14 @@ export const main = style({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
+
+  "@media": {
+    [mediaScreen("328")]: {
+      padding: "0 16px",
+    },
+  },
 });
 
-export const h1 = style({});
+export const h1 = style({
+  textAlign: "center",
+});
