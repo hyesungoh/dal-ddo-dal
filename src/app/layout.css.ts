@@ -7,4 +7,5 @@ globalStyle("html, body", {
 globalStyle("*", {
   wordBreak: "keep-all",
   boxSizing: "border-box",
+  fontFamily: 'var(--font-pretendard)'
 });

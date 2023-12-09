@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./layout.css";
-import Head from "next/head";
+
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+const pretendard = localFont({
+  src: "../assets/font/PretendardVariable.woff2",
+  variable: '--font-pretendard',
+  display: "swap",
+  preload: true,
+});
 
 export const metadata: Metadata = {
   title: "달또달 - 시속 / 페이스 계산기",
@@ -34,7 +39,7 @@ export default function RootLayout({
         }}
       />
 
-      <body className={inter.className}>{children}</body>
+      <body className={pretendard.className}>{children}</body>
     </html>
   );
 }
