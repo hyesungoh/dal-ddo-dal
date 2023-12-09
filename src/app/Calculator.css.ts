@@ -1,8 +1,12 @@
 import { style } from "@vanilla-extract/css";
 
-export const main = style({
+export const div = style({
   width: "100%",
+  maxWidth: "328px",
   display: "flex",
   flexDirection: "column",
-  alignItems: "center",
+});
+
+export const input = style({
+  marginBottom: '12px'
 });

@@ -1,16 +1,18 @@
 const { createVanillaExtractPlugin } = require("@vanilla-extract/next-plugin");
 const withVanillaExtract = createVanillaExtractPlugin();
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
   compress: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
   compiler: {
-    reactRemoveProperties: {
+    reactRemoveProperties: isProd && {
       properties: ["&data-testid"],
     },
-    removeConsole: {
+    removeConsole: isProd && {
       exclude: ["error", "warn"],
     },
   },
