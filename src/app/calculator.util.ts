@@ -17,8 +17,6 @@ export function paceToKmPerHour(pace: string) {
     return "";
   }
 
-  console.log(minute, second);
-
   const calculatedPace = minute + second / 60;
   const kmPerHourValueNumber = 60 / calculatedPace;
 

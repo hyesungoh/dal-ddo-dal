@@ -51,7 +51,8 @@ export default function Calculator() {
         id={kmPerHourId}
         value={kmPerHourValue}
         onChange={onKmPerHourChange}
-        type="tel"
+        type="number"
+        step="0.1"
       />
     </div>
   );
