@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./layout.css";
-
 import Script from "next/script";
-import Head from "next/head";
+import "./layout.css";
 
 const pretendard = localFont({
   src: "../assets/font/PretendardVariable.woff2",
@@ -24,12 +22,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <Head>
+      <head>
         <meta
           name="google-site-verification"
           content="35qHWojXW_LaUfk3gtlePrSNsDUS8mXB7uqhYOzc9bo"
         />
-      </Head>
+      </head>
 
       <Script
         id="gtag-script"
