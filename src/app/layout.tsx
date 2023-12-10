@@ -3,10 +3,11 @@ import localFont from "next/font/local";
 import "./layout.css";
 
 import Script from "next/script";
+import Head from "next/head";
 
 const pretendard = localFont({
   src: "../assets/font/PretendardVariable.woff2",
-  variable: '--font-pretendard',
+  variable: "--font-pretendard",
   display: "swap",
   preload: true,
 });
@@ -23,6 +24,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="35qHWojXW_LaUfk3gtlePrSNsDUS8mXB7uqhYOzc9bo"
+        />
+      </Head>
+
       <Script
         id="gtag-script"
         async
