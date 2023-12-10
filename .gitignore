@@ -1,11 +1,6 @@
 # Mac
 .DS_Store
 
-# next-sitemap
-robots.txt
-sitemap.xml
-sitemap-*.xml
-
 # dependencies
 /node_modules
 /.pnp
